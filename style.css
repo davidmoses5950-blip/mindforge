@@ -1,419 +1,103 @@
-/* GENERAL SETTINGS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindForge - David Moses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-html {
-    scroll-behavior: smooth;
-}
-body {
-    font-family: arial,sans-serif;
-    background: white;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-    line-height: 1.7;
-    overflow-x: hidden;
-}
+    <div class="sidebar">
+        <h2>My Website</h2>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
 
-/* SIDERBAR */
-.sidebar {
-    width: 230px;
-    height: 100vh;
-    background: #111827;
-    padding: 30px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: block;
-    flex-direction: column;
-    gap: 20px;
-    z-index: 1000;
-}
+    <div class="content" id="home">
+        <h1 id="welcomeTitle">Welcome to MindForge</h1>
+        <br>
+        <p>I build simple and beautiful website. I trun into real projects.</p>
+          <br>
+          <button class="btn">Get Started</button>
+    </div>
 
-.sidebar h2 {
-    color: white;
-    margin-bottom: 20px;
-}
+    <div class="about" id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is David Moses. I am a passionate, ambitious, and hardworking individual who is always eager to learn new thing and improve myself. I have a strong intrest in  technology, particulary data analytics, artifical inteligence, machine leaning, and softeware development. I also have skills and an intrest in graphic design and digital branding.</p>
+        <p>I enjoy exploring new ideas, solving problems,a nd developing skills that can help me to grow personally and professionally. my goal is to become a successful professional in the technology industry, acquire valuable knowledge, and use my skills to make a positive impact on society. i believe in continuous leaning, determination, creativity, and hard work.</p>
+    </div>
 
-.sidebar a {
-    display: block;
-    color: rgb(239, 239, 243);
-    text-decoration: none;
-    padding: 10px;
-    margin-bottom: 8px;
-    border-radius: 8px;
-    transition: 0.3s;
-}
+    <div class="skill" id="skills">
+        <h2>My skills</h2>
+        <div class="skill-box">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Data Analytics</span>
+        <span>Graphic Design</span>
+    </div>
+    </div>
 
-.sidebar a:hover {
-    color: rgb(240, 236, 4);
-    background: #2563ed;
-}
+    <div class="project" id="projects">
+        <h2>My Projects</h2>
+        <br>
+        <div class="project-box">
+            <div class="card">
+                <h3>MindForge Website</h3>
+                <p>My fist websitebuilt with HTML and CSS.</p>
+        </div>
 
-/* MAIN CONTENT */
-.content,
-.about,
-.skill,
-.project,
-.service,
-.contact,
-.footer {
-    margin-left: 230px;
-    padding: 65px 7%;
-}
+        <br>
+        <div class="card">
+            <h3>Data Project</h3>
+            <p>Simple data analytics project using Excel.</p>
+            </div>
 
-/* HOME */
-.content {
-    margin-left: 240px;
-    padding: 50px;
-    text-align: center;
-    background: rgb(7, 38, 107);
-    min-height: 60vh;
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    background: linear-gradient(135eg; #171329, #30205c);
-}
+            <br>
+            <div class="card">
+                <h3>Design Project</h3>
+                <p>Graphic design for logo and branding</p>
+    </div>
+    </div>
+</div>
 
-.content h1 {
-    color: white;
-    font-weight: bolder;
-    font-size: clamp(30px, 5vw, 55px);
-}
+    <div class="service" id="services">
+        <h2>Services</h2>
+                <div class="service-box">
+                    <div class="service-card">
+                        <h3>Web Development</h3>
+                        <p>I build simple and beautiful website with HTML and CSS.</p>
+                        </div>
 
-.content p {
-    color: white;
-    font-size: 18px;
-}
+                <div class="service-card">
+                    <h3>Data Analytics</h3>
+                    <p>I help you understand your data with Excel and charts.</p>
+                </div>
 
-.btn,
-.contact-btn {
-    color: black;
-    padding: 12px 25px;
-    background: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
-    cursor: pointer;
-    display: inline-block;
-    text-decoration: none;
-    
-}
+                <div class="service-card">
+                    <h3>Graphic Design</h3>
+                    <p>I design logos, poster and bramding for your business.</p>
+    </div>
+    </div>
+    </div>
 
-/* SECTION HEADING */
-h2 {
-    color: black;
-    margin-bottom: 20px;
-}
+    <div class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Let's work together! Send me a message.</p>
+        <p><b>Email:</b> davidmoses5950@gmail.com</p>
+        <p><b>Phone:</b> +234 813 146 8194</p>
+        <p><b>Location:</b> Enugu, Nigeria</p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=davidmoses5950@gmail.com" class="contact-btn">Send Email</a>
+    </div>
 
-.btn:hover {
-    color: yellow;
-    background-color: #2563ed;
-}
+    <div class="footer">
+        <p>&copy; 2026 MindForge. Built with HTML and CSS.</p>
+    </div>
 
-/* ABOUT */
-.about {
-    margin-left: 250px;
-    text-align: left;
-    padding: 50px 20px;
-    background-color: white;
-}
-
-.about h2 {
-    font-size: 32px;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.about p {
-    max-width: 700px;
-    margin: 10px auto;
-    margin-bottom: 18px;
-}
-
-/* SKILLS */
-.skill {
-    padding: 50px 20px;
-    margin-left: 250px;
-    text-align: center;
-    background-color: lightblue;
-    min-height: 45vh;
-}
-
-.skill h2 {
-    font-size: 32px;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.skill-box {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.skill-box span {
-    background-color: white;
-    padding: 15px 15px;
-    border-radius: 20px;
-    font-style: bold;
-}
-
-.skill-box span:hover {
-    background-color: #2563ed;;
-    color: rgb(240, 236, 4);
-}
-
-/* PROJECTS */
-.project {
-     padding: 50px 20px;
-    margin-left: 250px;
-    text-align: left;
-    background-color: white;
-}
-
-.project h2 {
-    font-size: 32px;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.project-box {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: rgb(7, 38, 107);
-    padding: 20px 15px;
-    border-radius: 20px;
-    border: 3px solid #09090a;
-}
-
-.card h3 {
-    color: white;
-    text-align: center;
-    padding: 10px 8px;
-    margin-bottom: 10px;
-}
-
-.card p {
-    color: white;
-}
-
-/* SERVICES */
-.service {
-    padding: 30px 20px;
-    margin-left: 250px;
-    text-align: left;
-    background-color: lightblue;
-}
-
-.service h2 {
-    font-size: 32px;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.service-box {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(3; 1fr);
-   
-}
-
-.service-card {
-    background-color: rgb(239, 239, 243);
-    padding: 20px 15px;
-    border-radius: 20px;
-    outline-style: auto;
-}
-
-.service-card h3 {
-    color: black;
-    text-align: center;
-    padding: 10px 8px;
-    margin-bottom: 10px;
-}
-
-.service-card p {
-    color: black;
-}
-
-.service-box :hover {
-    background-color: lightgrey;
-    
-}
-
-/* CONTACT */
-.contact {
-    padding: 50px 20px;
-    margin-left: 250px;
-    text-align: left;
-    background-color: white;
-}
-
-.contact h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.contact p {
-    margin: 8px 0;
-    margin-bottom: 12px;
-}
-
-.contact-btn {
-    display: inline-block;
-    margin-top: 15px;
-    background-color: rgb(182, 7, 7);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* FOOTER */
-.footer {
-    padding: 25px;
-    margin-left: 250px;
-    text-align: center;
-    background-color: #222;
-    color: white;
-}
-
-.contact-btn:hover {
-    background-color: blue;
-    color: yellow;
-}
-
-/* TABLETS */
-@media screen and (max-width: 900px) {
-
-    .project-box,
-    .service-box {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* MOBILE PHONES */
-@media screen and (max-width: 600px) {
-
-    .sidebar {
-        position: relative;
-        width: 100%;
-        height: auto;
-        padding: 15px 15px;
-        justify-content: center;
-        gap: 8px;
-        display: grid;
-        grid-template-columns: repeat(6, minmax(0, 1fr));
-        font-family: center;
-    }
-
-    .sidebar h2 {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 5px;
-        grid-column: 1 / -1;
-        color: white;
-    }
-
-    .sidebar a {
-    display: block;
-    color: rgb(239, 239, 243);
-    text-decoration: none;
-    padding: 8px 10px;
-    margin-bottom: 8px;
-    border-radius: 8px;
-    transition: 0.3s;
-    font-size: 15px;
-    gap: 10px;
-    
-
-    }
-
-    .content,
-    .about,
-    .skill,
-    .project,
-    .service,
-    .contact,
-    .footer {
-        margin-left: 0;
-        padding: 20px 15px;
-    }
-
-    .project-box {
-        gap: 0;
-        flex: 1;
-        min-height: 140px;
-        padding: 18px 15px;
-        text-align: center;
-        font-size: 20px;
-    }
-
-    .projects {
-        display: flex;
-        justify-content: center;
-        align-items: stretch;
-        gap: 0;
-        padding: 15px 15px;
-    }
-
-    .card,
-    .project-card {
-        padding: 20px;
-    }
-
-    .content {
-        min-height: auto;
-        height: auto;
-        padding: 70px 30px;
-    }
-
-    .content h1 {
-        font-size: 30px;
-    }
-
-    .content p {
-        font-size: 15px;
-    }
-
-    .service {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    .service-box {
-        flex: 1;
-        min-height: 140px;
-        padding: 18px 15px;
-        text-align: center;
-        font-size: 20px;
-    }
-
-    .skill-box {
-        gap: 20px;
-        font-size: 20px;
-    }
-
-    .card,
-    .service-card {
-        padding: 20px;
-    }
-}
+    <script src="script.js"></script>
+</body>
+</html>
