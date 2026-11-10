@@ -351,6 +351,7 @@ h2 {
 
     nav ul li a {
         font-size: 11px;
+        text-decoration: none;
     }
 
     .sidebar {
