@@ -182,7 +182,7 @@ section, div[id] {
 /* MOBILE PHONES */
 @media screen and (max-width: 600px) {
 
-    .sidebar {
+    .navbar {
         position: relative;
         width: 100%;
         height: auto;
@@ -193,13 +193,13 @@ section, div[id] {
         gap: 8px;
     }
 
-    .sidebar h2 {
+    .navbar h2 {
         width: 100%;
         text-align: center;
         margin-bottom: 5px;
     }
 
-    .sidebar a {
+    .navbar a {
         font-size: 13px;
         padding: 7px 9px;
     }
