@@ -13,6 +13,10 @@ body {
     overflow-x: hidden;
 }
 
+.btn:hover {
+    background-color: #ea580c;
+}
+
 header {
     background-color: rgb(26, 3, 88);
     text-align: center;
@@ -26,6 +30,13 @@ header {
     align-items: center;
     width: 100%;
     box-sizing: border-box;
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;flex-shrink: 0;
 }
 
 .navbar {
@@ -50,8 +61,9 @@ header {
     color: white;
     justify-content: space-between;
     box-sizing: border-box;
-    margin-left: 50px;
+    margin-left: 80px;
     font-size: 20px;
+    text-align: center;
 }
 
 .navbar a:hover {
@@ -59,20 +71,30 @@ header {
 }
 
 .content {
-    background-color: rgb(236, 232, 232);
+    background-color: rgb(211, 208, 208);
     color: black;
     justify-content: center;
 }
 
 .content h1 {
     text-align: center;
-    margin-bottom: 20px;
     font-size: 40px;
-    padding: 50px;
+    padding: 20px;
+    margin-top: 0;
 }
 
 body .content {
     padding: 20px;
+}
+
+.content img {
+    width: 350px;
+    max-width: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-left: 60px;
+    margin-top: 12px;
+    height: 150px;
 }
 
 body .about {
@@ -88,9 +110,17 @@ body .about {
     font-size: 40px;
 }
 
+.about strong {
+    color: rgb(123, 255, 0);
+}
+
+.about h3 {
+    color: rgb(0, 110, 255);
+}
 .courses {
     padding: 30px;
     justify-content: center;
+    text-align: left;
 }
 
 .courses h1 {
@@ -99,9 +129,19 @@ body .about {
     font-size: 40px;
 }
 
+.courses img {
+    width: 200px;
+    max-width: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-left: 70px;
+    margin-top: 12px;
+    height: 100px;
+}
+
 .projects {
     padding: 30px;
-    background-color: rgb(236, 232, 232);
+    background-color: rgb(211, 208, 208);
     color: black;
 
 }
@@ -111,6 +151,16 @@ body .about {
     font-size: 40px;
     margin-bottom: 20px;
     color: rgb(4, 4, 187);
+}
+
+.projects img {
+    width: 200px;
+    max-width: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-left: 5px;
+    margin-top: 12px;
+    height: 130px;
 }
 
 .certificates {
@@ -141,6 +191,19 @@ body .about {
     margin-bottom: 10px;
     font-size: 25px;
     color: rgb(0, 217, 255);
+}
+
+/* CONTACT FORM */
+input,
+textarea {
+    width: 30%;
+    max-width: 90%;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: red;
 }
 
 button {
@@ -182,62 +245,129 @@ section, div[id] {
 /* MOBILE PHONES */
 @media screen and (max-width: 600px) {
 
-    .navbar {
-        position: relative;
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
         width: 100%;
-        height: auto;
-        padding: 15px;
+        overflow-x: hidden;
+        line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 8px;
-    }
-
-    .navbar h2 {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 5px;
-    }
-
-    .navbar a {
-        font-size: 13px;
-        padding: 7px 9px;
-    }
-
-    .content,
-    .about,
-    .skill,
-    .project,
-    .service,
-    .contact,
-    .footer {
-        margin-left: 0;
-        padding: 45px 20px;
-    }
-
-    .content {
-        min-height: 80vh;
-    }
-
-    .content h1 {
-        font-size: 32px;
-    }
-
-    .content p {
-        font-size: 15px;
-    }
-
-    .project-box,
-    .service-box {
-        grid-template-columns: 1fr;
-    }
-
-    .skill-box {
+        align-items: center;
+        padding: 15px 5px;
         gap: 10px;
     }
 
-    .card,
-    .service-card {
-        padding: 20px;
+    .navbar img {
+        width: 40px;
+        height: auto;
+    }
+    .navbar h2 {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .navbar a {
+        font-size: 17px;
+        margin: 0;
+        display: inline-block;
+        white-space: nowrap;
+        margin-bottom: 0;
+    }
+
+    /* HOME SECTION */
+    .content {
+        width: 100%;
+        padding: 20px 15px;
+        text-align: left;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content h2 {
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* IMAGES */
+    
+    .content img,
+    .about img,
+    .certificates img {
+        width: 135px;
+        height: 100px;
+        margin: 0;
+        margin-left: 2px;
+        margin-top: 5px;
+    }
+
+    /* SECTIONS */
+    .about,
+    .courses,
+    .projects,
+    .certificates,
+    .contact {
+        width: 100%;
+        padding: 20px 15px;
+        text-align: left;
+    }
+
+    .about h1,
+    .courses h1,
+    .projects h1,
+    .certificates h1 {
+        font-size: 30px;
+    }
+
+    .courses img {
+        width: 190px;
+        height: 100px;
+        margin: 0;
+        margin-top: 5px;
+    }
+
+    .projects img {
+        width: 190px;
+        height: 100px;
+        margin: 0;
+        margin-top: 5px;
+    }
+
+    /* CONTACT FORM */
+    input,
+    textarea {
+        width: 90%;
+        max-width: 90%;
+        padding: 6px;
+    }
+
+    .contact a {
+        color: red;
+    }
+
+    button {
+        max-width: 90%;
+    }
+
+    /* FOOTER */
+    .footer {
+        width: 100%;
+        text-align: center;
     }
 }
