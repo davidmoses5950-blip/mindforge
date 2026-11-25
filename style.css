@@ -163,17 +163,6 @@ body .about {
     height: 130px;
 }
 
-.certificates {
-    padding: 30px;
-    justify-content: center;
-}
-
-.certificates h1 {
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
 .contact {
     background-color: rgb(1, 59, 59);
     padding: 30px;
@@ -264,12 +253,12 @@ section, div[id] {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        padding: 15px 5px;
-        gap: 10px;
+        padding: 0;
+        gap: 12px;
     }
 
     .navbar img {
-        width: 40px;
+        width: 50px;
         height: auto;
     }
     .navbar h2 {
@@ -278,7 +267,7 @@ section, div[id] {
     }
 
     .navbar a {
-        font-size: 17px;
+        font-size: 15px;
         margin: 0;
         display: inline-block;
         white-space: nowrap;
@@ -308,10 +297,9 @@ section, div[id] {
     /* IMAGES */
     
     .content img,
-    .about img,
-    .certificates img {
-        width: 135px;
-        height: 100px;
+    .about img {
+        width: 100px;
+        height: 95px;
         margin: 0;
         margin-left: 2px;
         margin-top: 5px;
@@ -321,7 +309,6 @@ section, div[id] {
     .about,
     .courses,
     .projects,
-    .certificates,
     .contact {
         width: 100%;
         padding: 20px 15px;
@@ -330,21 +317,20 @@ section, div[id] {
 
     .about h1,
     .courses h1,
-    .projects h1,
-    .certificates h1 {
+    .projects h1 {
         font-size: 30px;
     }
 
     .courses img {
-        width: 190px;
-        height: 100px;
+        width: 140px;
+        height: 90px;
         margin: 0;
-        margin-top: 5px;
+        margin-top: 10px;
     }
 
     .projects img {
-        width: 190px;
-        height: 100px;
+        width: 140px;
+        height: 90px;
         margin: 0;
         margin-top: 5px;
     }
@@ -369,5 +355,21 @@ section, div[id] {
     .footer {
         width: 100%;
         text-align: center;
+    }
+}
+
+/* SMALLER TABLETS AND PHONES */
+@madia screen and (max-width: 768) {
+    .container {
+        width: 95%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .images {
+        display: flex;
+        flex-direction: column;
     }
 }
